@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Microtechx Data\\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\\New Folder\\UserGroupRole\\UserGroupRole.csproj": {}
+  },
+  "projects": {
+    "F:\\Microtechx Data\\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\\New Folder\\UserGroupRole\\UserGroupRole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Microtechx Data\\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\\New Folder\\UserGroupRole\\UserGroupRole.csproj",
+        "projectName": "UserGroupRole",
+        "projectPath": "F:\\Microtechx Data\\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\\New Folder\\UserGroupRole\\UserGroupRole.csproj",
+        "packagesPath": "C:\\Users\\Hassan Raza\\.nuget\\packages\\",
+        "outputPath": "F:\\Microtechx Data\\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\\New Folder\\UserGroupRole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hassan Raza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[33.0.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.3, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.3, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[1.15.2, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[1.15.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
