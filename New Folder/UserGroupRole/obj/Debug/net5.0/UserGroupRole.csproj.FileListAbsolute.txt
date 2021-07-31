@@ -63,3 +63,4 @@ F:\Microtechx Data\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\
 F:\Microtechx Data\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\New Folder\UserGroupRole\obj\Debug\net5.0\UserGroupRole.genruntimeconfig.cache
 F:\Microtechx Data\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\New Folder\UserGroupRole\bin\Debug\net5.0\Bogus.dll
 F:\Microtechx Data\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\New Folder\UserGroupRole\obj\Debug\net5.0\Razor\Views\Products\index.cshtml.g.cs
+F:\Microtechx Data\Exercise-Create-and-secure-a-web-app-with-Microsoft-identity\New Folder\UserGroupRole\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs

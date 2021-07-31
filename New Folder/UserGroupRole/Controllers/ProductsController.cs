@@ -1,9 +1,10 @@
+using System.Linq;
+using UserGroupRole.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 namespace UserGroupRole.Controllers
 {
-  [Authorize(Roles=("b8fb2729-2c7e-4876-9acf-9de51c127e20"))]
+     [Authorize(Roles =("ProductViewers,ProductAdministrators"))]
   public class ProductsController : Controller
   {
     SampleData data;
@@ -17,5 +18,33 @@ namespace UserGroupRole.Controllers
     {
       return View(data.Products);
     }
+    [Authorize(Roles = ("ProductAdministrators"))]
+public ActionResult Create()
+{
+  var viewModel = new ProductViewModel()
+  {
+    Categories = data.Categories
+  };
+  return View(viewModel);
+}
+
+[Authorize(Roles = ("ProductAdministrators"))]
+[HttpPost]
+[ValidateAntiForgeryToken]
+public ActionResult Create([Bind("ProductName", "CategoryId")] ProductViewModel model)
+{
+  if (ModelState.IsValid)
+  {
+    data.Products.Add(new Product()
+    {
+      ID = data.Products.Max(p => p.ID) + 1,
+      Name = model.ProductName,
+      Category = data.Categories.FirstOrDefault(c => c.ID == model.CategoryId)
+    });
+    return RedirectToAction("Index");
   }
+  return View(model);
+}
+  }
+    
 }
